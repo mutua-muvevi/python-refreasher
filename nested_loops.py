@@ -60,7 +60,6 @@ for i in range(pascal_number):
     for k in range(0, i + 1):
         print(coefficient, end=" ")
         coefficient = coefficient * (i - k) // (k + 1)
-
     print()
 
 
