@@ -11,7 +11,7 @@ print(len(name))
 print(name.find("t"))
 
 # replace
-print(name.replace("er", "s"))
+print("REPLACED", name.replace("er", "s"))
 
 # upper case
 print(name.upper())
