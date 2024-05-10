@@ -76,3 +76,48 @@ while counter <= number_range_end:
     counter += 1
 
 print(sum_of_numbers)
+
+# guess the number 3 times trial
+secret_number = 9
+counter = 0
+trials = 3
+
+while counter < trials:
+    user_number = int(input("Enter your number : "))
+    counter += 1
+
+    if user_number == secret_number:
+        print("You are correct!")
+        break
+
+    elif counter == trials:
+        print("You tried your best but failed")
+
+    else:
+        print("you are wrong please try again")
+
+# build a small car engine game simulation if given wrong commands 10 times it quits
+car_commands = ["start", "stop", "quit"]
+your_command = str(input(">> ")).lower()
+wrong_commands_maximum = 3
+wrong_commands = 0
+
+while True:
+    if your_command not in car_commands:
+        print("Wrong command!")
+        
+        wrong_commands += 1
+        
+        if wrong_commands == wrong_commands_maximum:
+            print("Car is confused and damaged")
+            break
+            
+        your_command = str(input(">> ")).lower()
+    else:
+        print(f">> car {your_command}")
+        your_command = str(input(">> ")).lower()
+        
+        if your_command == "quit":
+            print("You have quited and now we exit")
+            break
+            

@@ -30,3 +30,6 @@ print("How many f's are there : ", lorem_ipsum.count("f"))
 
 # print strings more than number of times
 print(name * 3)
+
+# formated string
+print(f"{name} should be a string")
