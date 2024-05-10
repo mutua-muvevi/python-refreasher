@@ -11,3 +11,4 @@ else:
         print("You are not supposed to drink because you are diabetic")
     else:
         print("Let's party")
+ 

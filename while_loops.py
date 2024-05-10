@@ -65,3 +65,14 @@ while counter <= multiple_number:
         nested_counter += 1
     print()
     counter += 1
+
+# sum of natural numbers
+number_range_end = int(input("Enter your last number : "))
+sum_of_numbers = 0
+counter = 0
+
+while counter <= number_range_end:
+    sum_of_numbers = sum_of_numbers + counter
+    counter += 1
+
+print(sum_of_numbers)

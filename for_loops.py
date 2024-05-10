@@ -45,3 +45,30 @@ for seconds in range(number_of_seconds, 0, -1):
     time.sleep(1)
 print("Explode BOOOOOM")
 
+
+# numbers divisible by 7
+number_range_start = int(input("Enter your first number : "))
+number_range_end = int(input("Enter your last number : "))
+
+for i in range(number_range_start, number_range_end):
+    if i % 7 == 0:
+        print(str(i), ", ", end="")
+
+# sum of natural numbers
+number_range_start = int(input("Enter your first number : "))
+number_range_end = int(input("Enter your last number : "))
+sum_of_numbers = 0
+
+for i in range(number_range_start, number_range_end + 1):
+    sum_of_numbers += i
+print(sum_of_numbers)
+
+# in a range if number is divisible by 5 print divisible by 5
+start_range = int(input("Enter the beginning number : "))
+end_range = int(input("Enter the end number : "))
+
+for i in range(start_range, end_range + 1):
+    if i % 5 == 0:
+        print("divisible by 5")
+    else:
+        print(i)
