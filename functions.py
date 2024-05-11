@@ -8,6 +8,7 @@ emojis = {
 	":D": "🤣"
 }
 
+
 # sentence = input(">> ")
 
 
@@ -19,8 +20,6 @@ def emoji_converter(input_sentence):
 		output += emojis.get(word, word) + " "
 	
 	return output
-
-
 
 
 # output = emoji_converter(sentence)
@@ -61,3 +60,13 @@ def emoji_converter(input_sentence):
 # area_circle = calculate_area(units=input(unit_input_string),  radius=int(input(radius_input_string)))
 # print(area_circle)
 # print(type(area_circle))
+
+
+def find_max(list_of_numbers):
+	maximum_number = list_of_numbers[0]
+	
+	for number in list_of_numbers:
+		if number > maximum_number:
+			maximum_number = number
+	
+	return maximum_number
