@@ -1,23 +1,42 @@
-# emoji converter
+# # emoji converter
+#
+# emojis = {
+# 	":)": "😊",
+# 	":(": "😔",
+# 	":D": "🤣"
+# }
+#
+# sentence = input(">> ")
+#
+#
+# def emoji_converter(input_sentence):
+# 	output = ""
+# 	words = input_sentence.split(" ")
+#
+# 	for word in words:
+# 		output += emojis.get(word, word) + " "
+#
+# 	return output
+#
+#
+# output = emoji_converter(sentence)
+# print(output)
 
-emojis = {
-	":)": "😊",
-	":(": "😔",
-	":D": "🤣"
-}
+# a function that creates user object for you
+user_object = {}
 
-sentence = input(">> ")
+name = input("What is your name : ")
+age = int(input("What is your age : "))
+profession = input("What is your profession : ")
 
 
-def emoji_converter(input_sentence):
-	output = ""
-	words = input_sentence.split(" ")
+def create_user(name, age, profession):
+	user_object[name] = name
+	user_object[profession] = profession
+	user_object[age] = profession
 	
-	for word in words:
-		output += emojis.get(word, word) + " "
-	
-	return output
+	return user_object
 
 
-output = emoji_converter(sentence)
-print(output)
+new_user = create_user(name, age, profession)
+print(new_user)
