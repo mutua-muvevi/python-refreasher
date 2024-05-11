@@ -1,6 +1,5 @@
 import math
 
-
 # emoji converter
 
 emojis = {
@@ -9,19 +8,21 @@ emojis = {
 	":D": "🤣"
 }
 
-sentence = input(">> ")
+# sentence = input(">> ")
 
 
 def emoji_converter(input_sentence):
 	output = ""
 	words = input_sentence.split(" ")
-
+	
 	for word in words:
 		output += emojis.get(word, word) + " "
-
+	
 	return output
-#
-#
+
+
+
+
 # output = emoji_converter(sentence)
 # print(output)
 
@@ -41,19 +42,22 @@ def emoji_converter(input_sentence):
 #
 #
 # new_user = create_user(name, age, profession)
-# print((new_user))
+# print(new_user)
 #
 #
 # for keys, value in new_user.items():
 # 	print("Keys", keys, type(keys))
 # 	print("Values", value)
-
-# key word arguments
-def calculate_area(radius, units):
-	area = math.pi * pow(radius, 2)
-	return area, units
-
-
-area_circle = calculate_area(units="metres", radius=int(input("Enter the radius")))
-print(area_circle)
-print(type(area_circle))
+#
+# # key word arguments
+# def calculate_area(radius, units):
+# 	area = math.pi * pow(radius, 2)
+# 	return area, units
+#
+#
+# unit_input_string = "What is the unit that you want to use: "
+# radius_input_string = "Enter the radius : "
+#
+# area_circle = calculate_area(units=input(unit_input_string),  radius=int(input(radius_input_string)))
+# print(area_circle)
+# print(type(area_circle))
